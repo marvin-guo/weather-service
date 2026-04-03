@@ -21,6 +21,10 @@ Some Location examples (copy to replace in above api url):
 * Canada Quebec: lat=51.40&long=-73.11
 * Landon: lat=51.51&long=-0.1
 
+Optional View from another repo
+* https://github.com/marvin-guo/weather-react/tree/main
+* pull react repo, and run `npm install && npm run dev` to enter lat/long in a form and view weather info response.
+
 ## Available Scripts
 
 ### `npm run clean-install`

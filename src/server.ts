@@ -3,6 +3,7 @@ import helmet from 'helmet';
 import logger from 'jet-logger';
 import morgan from 'morgan';
 import path from 'path';
+import cors from 'cors';
 
 import Paths from '@src/common/constants/Paths';
 import { RouteError } from '@src/common/utils/route-errors';
@@ -15,12 +16,12 @@ import EnvVars, { NodeEnvs } from './common/constants/env';
 ******************************************************************************/
 
 const app = express();
-
 // **** Middleware **** //
 
 // Basic middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors({ origin: 'http://localhost:3000' }));
 
 // Show routes called in console during development
 if (EnvVars.NodeEnv === NodeEnvs.DEV) {
