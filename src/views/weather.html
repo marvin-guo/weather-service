@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Open Weather Map</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/weather.css" />
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/lib/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <script type="application/javascript" src="/scripts/lib/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Check weather -->
+    <div class="weather-column check-weather-col">
+      <div class="column-header">Enter Location Coordinates:</div>
+      <div>
+        <input
+          id="lat-input"
+          type="text"
+          class="form-control"
+          placeholder="Latitude"
+        />
+      </div>
+      <div>
+        <input
+          id="lon-input"
+          type="text"
+          class="form-control"
+          placeholder="Longitude"
+        />
+      </div>
+      <div>
+        <button id="check-weather-btn" class="btn btn-success">Check Weather</button>
+      </div>
+    </div>
+
+    <!-- Display weather -->
+    <div class="weather-column">
+      <div class="column-header">Weather:</div>
+      <div id="all-weather-anchor"></div>
+    </div>
+  </body>
+
+  <script src="/scripts/http.js"></script>
+  <script src="/scripts/render-weather.js"></script>
+  <script src="/scripts/weather.js"></script>
+</html>

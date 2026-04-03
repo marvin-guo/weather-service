@@ -1,0 +1,50 @@
+body {
+  padding: 100px;
+  font:
+    14px 'Lucida Grande',
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+body .weather-column {
+  display: inline-block;
+  margin-right: 2em;
+  vertical-align: top;
+}
+
+body .weather-column .column-header {
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/** Check weather **/
+
+body .check-weather-col input {
+  margin-bottom: 10px;
+}
+
+body .check-weather-col #check-weather-btn {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+/** weather Display Column **/
+
+.email-edit {
+  padding-bottom: 8px;
+}
+
+body .weather-column .weather-display-ele {
+  padding-bottom: 10px;
+}
+
+body .weather-column .weather-display-ele button {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+body .weather-column .weather-display-ele .edit-view {
+  display: none;
+}
