@@ -1,6 +1,25 @@
 ## About
 
-This project was created with [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript).
+This is a Weather Service Project. The http server uses the Open Weather API that exposes an endpoint that takes in lat/long coordinates.
+
+## Available endpoints (after npm install and npm run dev)
+
+### `http://localhost:3000/api/weather/onecall?lat={lat}&long={long}`
+
+Weather Information:
+* weatherCondition - condition array lile ['Rain']
+* weatherConditionDescription
+* feelsLikeCondition - feeling like Cold, Hot, Chilly, Warm, Mild
+* currentWeather - some temparature, humidity etc information
+* hasAlerts - Yes or No
+* activeAlerts - details include sender, description
+
+Some Location examples (copy to replace in above api url):
+* Rhode Island: lat=41.71&long=-71.56
+* Ocean near Boston: lat=41&long=-71
+* Monett, MO: lat=36.92&long=-93.92
+* Canada Quebec: lat=51.40&long=-73.11
+* Landon: lat=51.51&long=-0.1
 
 ## Available Scripts
 
